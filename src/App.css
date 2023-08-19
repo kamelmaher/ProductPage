@@ -1,0 +1,112 @@
+@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=Dosis:wght@300;400;500;600;700;800&family=Josefin+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,100&family=Kumbh+Sans:wght@100;300;500;700;800&family=Poppins:wght@300;400;500;600;700;800&family=Ubuntu:wght@300;400;500;700&family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap');
+:root {
+    --main-color: orange;
+}
+* {
+    box-sizing: border-box !important;
+}
+body {
+    font-family: 'Kumbh Sans',
+        sans-serif;;
+}
+
+.app {
+    height: 100vh !important;
+}
+nav {
+    border-bottom: 1px solid #33333345;
+    padding-bottom: 20px !important;
+    user-select: none;
+}
+nav li {
+    font-size: 15px;
+    font-weight: 500;
+    margin-left: 20px;
+}
+nav img {
+    width: 40px;
+    cursor: pointer;
+}
+.acc {
+    position: relative;
+}
+main {
+    padding: 40px 0;
+}
+.product .img {
+    border-radius: 20px;
+    overflow: hidden;
+    max-width: 300px;
+    margin: 0 auto;
+}
+.product li {
+    list-style: none;
+    width: 60px;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.product li.active {
+    border: 2px solid var(--main-color);
+}
+.desc h3 {
+    font-size: 15px;
+    color: var(--main-color);
+}
+.description {
+    font-size: 15px;
+}
+.discount {
+    background-color: var(--main-color);
+    padding: 3px 5px;
+    color: white;
+    border-radius: 7px;
+}
+.control span {
+    color: var(--main-color);
+    font-size: 20px;
+    padding: 5px;
+    cursor: pointer;
+    user-select: none;
+}
+button.add{
+    background-color: var(--main-color);
+    color: white;
+    padding: 10px 50px;
+    border: 0;
+    border-radius: 10px;
+    display: flex;
+    gap: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    user-select: none;
+}
+.cart {
+    position: absolute;
+    left: -150px;
+    top: 35px;
+    background-color: white;
+    min-width: 300px;
+    box-shadow: rgba(149, 157, 165, .6) 1px 10px 20px;
+}
+.cart li img {
+    border-radius: 7px;
+}
+.cart-icon {
+    cursor: pointer;
+}
+
+.is-empty {
+    position: absolute;
+    left: 10px;
+    top: -10px;
+    background-color: var(--main-color);
+    height: 20px;
+    width: 20px;
+    font-size: 12px;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 20px;
+}
